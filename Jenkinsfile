@@ -4,6 +4,7 @@ pipeline {
     stage ('Branch Test'){
       steps {
         echo " Branch is ${env.BRANCH_NAME}"
+        echo "This is UAT changes"
     }
   }
 }
