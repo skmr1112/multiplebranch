@@ -1,11 +1,10 @@
 pipeline {
-  agent any
+  agent any 
   stages {
-    stage ('Branch Test'){
+    stage ('build'){
       steps {
-        echo " Branch is ${env.BRANCH_NAME}"
-        echo "This is main branch"
+         echo " the pipeline is ${env.BRANCH_NAME}
+         }
     }
   }
-}
 }
